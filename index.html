@@ -1,74 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Himanshu Rai | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Rai - Full Stack Developer</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#eef1f5;color:#202733;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+  .resume{width:900px;max-width:94%;margin:30px auto;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.10)}
+  header{padding:34px 42px 28px;background:#182433;color:#fff}
+  header h1{margin:0;font-size:34px;letter-spacing:.3px}
+  header .role{font-size:17px;margin-top:4px;color:#cbd5e1}
+  .contact{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:17px;font-size:13px;color:#e2e8f0}
+  .content{display:grid;grid-template-columns:270px 1fr}
+  aside{padding:30px 25px;background:#f5f7fa;border-right:1px solid #e1e5ea}
+  main{padding:30px 38px}
+  h2{font-size:17px;text-transform:uppercase;letter-spacing:1.3px;color:#182433;margin:0 0 15px;padding-bottom:8px;border-bottom:2px solid #d7dde5}
+  section{margin-bottom:27px}
+  aside section{margin-bottom:28px}
+  ul{margin:8px 0 0;padding-left:18px}
+  li{margin:5px 0}
+  .skill{margin-bottom:13px}
+  .skill strong{display:block;font-size:13px;margin-bottom:3px}
+  .skill span{font-size:12px;color:#536174}
+  .summary{font-size:14px;color:#3e4a59}
+  .job{margin-bottom:25px}
+  .job-title{font-size:18px;font-weight:700;margin:0}
+  .company{font-size:14px;font-weight:600;color:#4c6178}
+  .date{font-size:12px;color:#718096;margin-top:2px}
+  .project{margin:17px 0}
+  .project h3{font-size:15px;margin:0 0 5px;color:#182433}
+  .project p{margin:4px 0;font-size:13px}
+  .label{font-weight:700;color:#39485a}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .compact li{font-size:13px}
+  .edu-item{font-size:13px;margin-bottom:12px}
+  .edu-item strong{display:block}
+  .personal{font-size:13px}
+  .personal div{margin-bottom:5px}
+  @media(max-width:700px){
+    .resume{width:100%;max-width:100%;margin:0}
+    .content{grid-template-columns:1fr}
+    aside{border-right:0;border-bottom:1px solid #e1e5ea}
+    main,aside,header{padding:25px}
+  }
+  @media print{
+    body{background:#fff}
+    .resume{width:100%;max-width:none;margin:0;box-shadow:none}
+  }
+</style>
 </head>
 <body>
-
+<div class="resume">
 <header>
   <h1>Himanshu Rai</h1>
-  <p>Full Stack Developer | Flutter & Laravel</p>
+  <div class="role">Full Stack Developer</div>
+  <div class="contact">
+    <span>✉ himanshu.sunny08@gmail.com</span>
+    <span>☎ +91 8320464808</span>
+    <span>LinkedIn: www.linkedin.com/in/himanshu-rai-b1884b70</span>
+    <span>Jaipur, Rajasthan, India</span>
+  </div>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+<div class="content">
+<aside>
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skill"><strong>Programming</strong><span>Dart, PHP, JavaScript</span></div>
+    <div class="skill"><strong>Framework</strong><span>Flutter</span></div>
+    <div class="skill"><strong>Version Control</strong><span>Git, GitHub</span></div>
+    <div class="skill"><strong>Databases</strong><span>MySQL, phpMyAdmin, Firebase</span></div>
+    <div class="skill"><strong>Web Servers</strong><span>Plesk Obsidian Panel, XAMPP</span></div>
+    <div class="skill"><strong>Operating Systems</strong><span>Windows, macOS, Linux (Red Hat Enterprise)</span></div>
+  </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a Full Stack Developer specializing in Flutter and Laravel.
-    I build scalable web and mobile applications with clean UI and secure backend.
-  </p>
-</section>
+  <section>
+    <h2>Education</h2>
+    <div class="edu-item"><strong>B.Sc. Computer Science</strong>Mumbai University, Mumbai — 2013, 56%</div>
+    <div class="edu-item"><strong>Class XII</strong>Board of Secondary Education, Maharashtra — 2010, 65%</div>
+    <div class="edu-item"><strong>Class X</strong>Board of Secondary Education, Maharashtra — 2008, 69%</div>
+  </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">Flutter</div>
-    <div class="card">Laravel</div>
-    <div class="card">PHP</div>
-    <div class="card">MySQL</div>
-    <div class="card">REST APIs</div>
-    <div class="card">Firebase</div>
-  </div>
-</section>
+  <section>
+    <h2>Professional Attributes</h2>
+    <ul class="compact">
+      <li>Strong problem-solving skills and quick learner.</li>
+      <li>Team collaboration and mentoring.</li>
+      <li>Adaptable to fast-paced environments.</li>
+      <li>Continuous learning and improvement.</li>
+    </ul>
+  </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+  <section>
+    <h2>Languages</h2>
+    <div class="personal">Hindi, English</div>
+  </section>
 
-  <div class="project">
-    <h3>Court Booking System</h3>
-    <p>Flutter app with Laravel backend, payment integration and admin panel.</p>
-  </div>
+  <section>
+    <h2>Interests</h2>
+    <div class="personal">Technology trends, hiking, cycling, badminton and sports.</div>
+  </section>
+</aside>
 
-  <div class="project">
-    <h3>Solar Equipment Marketplace</h3>
-    <p>Multi-role platform for Admin, Dealer & Customers.</p>
-  </div>
+<main>
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary">
+      Flexible and confident Full Stack Developer with 2.5 years of development experience
+      and 7 years of experience across IT infrastructure, web development and training.
+      Focused on performance, continuous delivery and user-friendly software solutions,
+      with strong problem-solving skills and the ability to work effectively under pressure.
+    </p>
+  </section>
 
-  <div class="project">
-    <h3>School Management Tools</h3>
-    <p>Automated notices, certificates and exam papers.</p>
-  </div>
-</section>
+  <section>
+    <h2>Work Experience</h2>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: himanshu.sunny08@gmail.com</p>
-  <p>Phone: +91-8320464808</p>
-  <p>GitHub: github.com/himanshu-008</p>
-</section>
+    <div class="job">
+      <p class="job-title">Full Stack Developer</p>
+      <div class="company">Dainik Navajyoti Printing Press Pvt. Ltd., Jaipur</div>
+      <div class="date">August 2022 – Present</div>
 
-<footer>
-  <p>© 2025 Himanshu Rai</p>
-</footer>
+      <ul class="compact">
+        <li>Designed and developed multiple Flutter applications for iOS and Android.</li>
+        <li>Implemented platform channels for platform-specific functionality.</li>
+        <li>Used the BLoC design pattern for UI and business-logic interactions.</li>
+        <li>Integrated RESTful APIs for data retrieval and manipulation.</li>
+      </ul>
 
+      <div class="project">
+        <h3>Dainik Navajyoti News App</h3>
+        <p><span class="label">Description:</span> News application for users and customers.</p>
+        <p><span class="label">Technology:</span> Flutter, PHP, Firebase, SQL, OneSignal</p>
+        <p><span class="label">Role:</span> Full Stack Developer</p>
+        <p><span class="label">Responsibilities:</span> Requirement understanding, low-fidelity prototyping, technology selection, database design, system implementation, testing and production deployment to App Store and Play Store.</p>
+      </div>
+
+      <div class="project">
+        <h3>News Feeder</h3>
+        <p><span class="label">Description:</span> Application for collecting news.</p>
+        <p><span class="label">Technology:</span> Flutter, PHP, Firebase, SQL, OneSignal</p>
+        <p><span class="label">Experience:</span> Multi-platform development, location tracking, video/image upload and download, and BLoC implementation.</p>
+        <p><span class="label">Packages:</span> BLoC, geo_locator, google_maps_flutter, equatable, url_launcher, OneSignal, firebase_messaging, pull_to_refresh, file_picker, community_charts_flutter.</p>
+      </div>
+
+      <div class="project">
+        <h3>Navajyoti Services</h3>
+        <p><span class="label">Description:</span> Application for maintaining news-partner details and providing services to partners.</p>
+        <p><span class="label">Technology:</span> Flutter, PHP, SQL</p>
+        <p><span class="label">Deployment:</span> Web application deployed using Plesk.</p>
+      </div>
+
+      <div class="project">
+        <h3>Training Platform – IIBF Trainee Record</h3>
+        <p><span class="label">Technology:</span> PHP, SQL, JavaScript, CSS</p>
+        <p><span class="label">Responsibilities:</span> Requirement analysis, technology selection, database design, system implementation and deployment using Plesk.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <p class="job-title">Assistant Teacher, IT</p>
+      <div class="company">Fellowship Mission School, Vapi</div>
+      <div class="date">April 2017 – December 2020</div>
+      <ul class="compact">
+        <li>Developed in-house reporting software using PHP, SQL Server, JavaScript, Ajax and jQuery.</li>
+        <li>Supported students, teachers and the learning environment.</li>
+        <li>Assisted students with IT project design and development.</li>
+        <li>Created modules and HTML forms for billing and sales.</li>
+        <li>Maintained PHP applications and databases and added graphical and tabular reporting.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <p class="job-title">Assistant Teacher, IT</p>
+      <div class="company">SSV. Gyan Kendra, Umbergaon, Valsad</div>
+      <div class="date">August 2013 – March 2017</div>
+      <ul class="compact">
+        <li>Delivered lectures, practical demonstrations and hands-on IT labs.</li>
+        <li>Focused on improving student understanding and engagement.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Personal Details</h2>
+    <div class="two-col personal">
+      <div><strong>Full Name:</strong> Himanshu Rai</div>
+      <div><strong>Marital Status:</strong> Married</div>
+      <div><strong>Gender:</strong> Male</div>
+      <div><strong>Nationality:</strong> Indian</div>
+    </div>
+  </section>
+</main>
+</div>
+</div>
 </body>
 </html>
